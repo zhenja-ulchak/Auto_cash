@@ -7,7 +7,12 @@ body {
 /* flex-row-custom container  justify-content:center */
 /* flex-row container  justify-content: space-around; */
 
-
+.activ{
+    color:#837a7a !important;
+}
+.noactiv{
+    color:#f4f4f4 !important;
+}
 
 .header {
     width: 100%;
@@ -315,8 +320,26 @@ input::placeholder {
     margin: 10px;
     background: #FFFFFF;
     border-radius: 8px;
+    transition:
+    width 1s,
+    height 1s,
+    background-color 1s,
+    transform 1s;
 }
 
+.block-card-elem {
+    width: 440px;
+    height: 260px;
+    margin: 10px;
+    background: #878181;
+    border-radius: 20px;
+
+    transition:
+    width 1s,
+    height 1s,
+    background-color 1s,
+    transform 1s;
+}
 
 .text-28-normal-second {
     margin: 0;
@@ -345,6 +368,16 @@ input::placeholder {
     font-size: 64px;
     line-height: 100%;
     color: #FF1D29;
+    font-family: 'Montserrat';
+}
+
+.text-64-bold-second-anime{
+    margin: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 69px;
+    line-height: 100%;
+    color: #ffffff;
     font-family: 'Montserrat';
 }
 
