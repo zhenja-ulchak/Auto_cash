@@ -1,4 +1,5 @@
-
+window.addEventListener("load",function (params) {
+    
 const textHead = document.getElementsByClassName("classActiv")
 
 
@@ -37,3 +38,24 @@ for(block in blockCard){
 
 }
 
+let closeBlock = document.querySelector(".close-block") 
+closeBlock.addEventListener("click", blockMenu);
+
+function blockMenu () {
+    console.log('egjoiheioughh');
+    let blockMenu = document.querySelector('.block-menu')
+    if ( blockMenu.classList.contains('active-menu')) {
+      blockMenu.classList.add("d-non")
+      blockMenu.classList.remove("active-menu")
+    }else{
+      blockMenu.classList.add('active-menu')
+      blockMenu.classList.remove("d-non")
+    }
+ 
+    console.log(blockMenu);
+}
+
+
+
+
+})
