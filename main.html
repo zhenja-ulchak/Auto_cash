@@ -40,6 +40,9 @@
                         <p class=" text-13 font-w-600 pr-50">+38 (068) 478-18-19</p>
                     </span>
                 </div>
+                <div class="light-night">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="100px" viewBox="0 0 24 24" fill="none"><path d="M13.589 21.659c-3.873 1.038-8.517-.545-10.98-3.632a1 1 0 0 1 .751-1.623c3.984-.118 6.662-1.485 8.17-4.098 1.51-2.613 1.354-5.616-.535-9.125a1 1 0 0 1 1.03-1.463c3.904.59 7.597 3.82 8.635 7.694 1.43 5.334-1.737 10.818-7.071 12.247z" fill="#fff"/></svg>
+                </div>
                 <div class="center-margin d-none">
                     <button class="button-header">Оставить заявку</button>
                 </div>
@@ -109,26 +112,28 @@
             <div>
                 <div class="form-main">
                     <p class="text-28-bold m-0 mb-30-form font-w-700 text-center ">Подати заявку</p>
-                    <form>
+                    <form id="form" >
                         <label class=" text-14-form">Марка Вашого авто</label>
-                        <select id="country" name="country">
-                            <option value="australia">mers</option>
-                            <option value="canada">mazda</option>
-
+                        <select id="brand" name="brand">
+                            <option value="mers">mers</option>
+                            <option value="mazda">mazda</option>
+                            <option value="bmw">bmw</option>
                         </select>
 
                         <label class=" text-14-form">Модель Вашого авто</label>
-                        <select id="country" name="country">
-                            <option value="australia">b200</option>
-                            <option value="canada">b300</option>
-
+                        <select id="model" name="model">
+                            <option value="b200">b200</option>
+                            <option value="b300">b300</option>
+                            <option value="b400">b400</option>
+                            <option value="b500">b500</option>
+                            
                         </select>
 
                         <label class=" text-14-form">Рік випуску</label>
-                        <select id="country" name="country">
-                            <option value="australia">1995</option>
-                            <option value="canada">1833</option>
-                            <option value="usa">1455</option>
+                        <select id="year" name="year">
+                            <option value="1995">1995</option>
+                            <option value="1833">1833</option>
+                            <option value="1455">1455</option>
                         </select>
 
                         <label class=" text-14-form">Ваш город</label>
@@ -138,15 +143,17 @@
                             <option value="usa">USA</option>
                         </select>
                         <label for="fname" class=" text-14-form">Ваше ім'я</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <input type="text" required id="firstname" name="firstname" placeholder="Your name..">
 
                         <label for="lname" class=" text-14-form">Номер телефону</label>
-                        <input type="text" id="lname" name="lastname" placeholder="+38(___) ___-__-__">
+                        <input type="text" required="required" id="lastname" name="lastname" placeholder="+38(___) ___-__-__">
+                        <div class="info">
 
+                        </div>
 
 
                         <div class="block-botton-f">
-                            <button type="submit" class="style-button text-16-bold font-w-700">Відправити</button>
+                            <button type="submit" class="click-button style-button text-16-bold font-w-700">Відправити</button>
                         </div>
 
                         <div class="pfoneMini">
@@ -207,7 +214,7 @@
     </div>
 
     <div class="wrapper bg-block-tree pl-r-all">
-        <div class="flex-row">
+        <div class="flex-row block-three">
             <div class="text-left mt-60 w-80">
                 <p class="text-36-bold font-w-700 text-black m-0">Почему именно <span class="text-red"> “Avto
                         Cash”</span>?</p>
@@ -343,5 +350,6 @@
 </body>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
 <script src="main.js"></script>
-
+<script src="validation.js" defer></script>
+<script src="theme.js" ></script>
 </html>
