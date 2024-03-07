@@ -312,6 +312,19 @@ input::placeholder {
 
 }
 
+.color-text{
+    color:#ffffff !important;
+}
+.color-text-black{
+    color:#000000 !important;
+}
+.color-text-background{
+    background-color: #000000 !important;
+}
+.color-linear-gradient{
+    background: linear-gradient(90deg, #565758 0%, #5d5f60 56.77%, #1e1e1e 100%) !important;
+}
+
 .mt-60-b {
     margin-top: 60px;
 }

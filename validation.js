@@ -5,7 +5,7 @@ window.addEventListener("load",function (params) {
     let onesel
     const info = document.querySelector(".info")
     function submitForm(params) {
-        console.log('fjsxfhjgnn');
+       // console.log('fjsxfhjgnn');
         const select = document.querySelectorAll("select")
         for( sel in select){
             onesel = select[sel]
@@ -19,7 +19,7 @@ window.addEventListener("load",function (params) {
                 info.innerHTML = " <b>Заповніть будьласка форму."
             }
 
-        console.log(element);
+       // console.log(element);
     
     }
 // only test

@@ -17,8 +17,8 @@ window.addEventListener("load",function (params) {
     let elem = blockCard[block]
     elem.onmouseover = function () {
       elem.classList.add('block-card-elem')
-      console.log(elem.lastChild);
-      console.log(elem.lastChild.previousSibling);
+      //console.log(elem.lastChild);
+      //console.log(elem.lastChild.previousSibling);
       let prev = elem.lastChild.previousSibling
       prev.classList.add("text-64-bold-second-anime")
     }
